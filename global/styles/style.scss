@@ -1,0 +1,364 @@
+// * ================================= RESET =================================
+
+@import 'reset';
+
+// * ================================= MAIN =================================
+
+@import 'variebles';
+
+body {
+    font-family: Gilroy, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 1240px;
+    padding: 0 10px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.navbar__txt {
+    font-size: 18px;
+    font-weight: 300;
+    color: #000;
+}
+
+.first__btn{
+            padding: 10px 20px;
+            border: 1px solid $mainColor;
+            background: $mainColor;
+            color: #fff;
+            transition: all .3s;
+            &:hover{
+                background: #fff;
+                color: $mainColor;
+            }
+}
+
+.btn{
+    background: rgb(255,84,84);
+    background: linear-gradient(180deg, rgba(255,84,84,1) 0%, rgba(205,72,72,1) 100%);
+    padding: 30px 130px;
+    border: none;
+    transition: all .3s;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 24px;
+
+    &:active{
+        background: linear-gradient(0deg, rgba(255,84,84,1) 0%, rgba(205,72,72,1) 100%);
+    }
+}
+
+
+// ================================= HEADER START =================================
+
+.header {
+    width: 100%;
+    height: 120vh;
+}
+
+.navbar {
+    width: 100%;;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 140px;
+
+    &__menu{
+        display: flex;
+        
+        &-item {
+            padding: 10px 20px;
+            transition: all .3s;
+            &:hover{
+                background: $mainColor;
+                a{
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    &__client{
+        width: 
+        250px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-basket{
+            display: flex;
+            align-items: center;
+            span {
+                margin-left: 17px;
+            }
+        }
+
+        .login{
+            padding: 10px 20px;
+            border: 1px solid $mainColor;
+            background: $mainColor;
+            color: #fff;
+            transition: all .3s;
+            &:hover{
+                background: #fff;
+                color: $mainColor;
+            }
+        }
+    }
+}
+
+.header__content {
+    width: 100%;
+    height: calc(100% - 140px);
+
+    &-top{
+        height: 130px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        form {
+            display: flex;
+            width: 680px;
+            
+            input {
+                padding: 10px;
+                width: 400px;
+                outline: none;
+                border: 1px solid #ccc;
+            }
+
+            button{
+                padding: 10px 50px;
+            }
+        }
+    }
+
+    &__middle{
+        height: calc(100% - 270px);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__text{
+            .title{
+                font-weight: bold;
+                font-size: 80px;
+                color: #434242;
+                span{
+                    color: $mainColor;
+                }
+            }
+            &__btn{
+                height: 150px;
+                display: flex;
+                align-items: center;
+                p{
+                    margin-left: 30px;
+                }
+            }
+        }
+        &__img{
+            width: 1000px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    &__bottom{
+        padding-top: 25px;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        button{
+            padding: 0 100px;
+            box-shadow: 0 0 10px $mainColor;
+            font-size: 24px;
+        }
+    }
+}
+
+// ================================= HEADER END =================================
+
+// * ================================= MAIN START =================================
+
+// * ================================= ABOUT START =================================
+
+.about{
+    width: 100%;
+    height: 110vh;
+}
+
+.about__title{
+    width: 80%;
+}
+
+.about__content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    .about__txt{
+        width: 50%;
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+
+        color: #000000;
+        button{
+            padding: 30px 130px;
+            font-size: 24px;
+            margin-top: 50px;
+        }
+    }
+    .about__img{
+        position: absolute;
+        right: -300px;
+        img{
+            width: 850px;
+        }
+    }
+}
+
+// ================================= ABOUT END =================================
+
+// * ================================= KATALOG START =================================
+
+.katalog{
+    width: 100%;
+    .navbar{
+        width: 100%;
+        &__menu{
+            display: flex;
+            margin: 0 auto;
+            &__item{
+                padding: 10px 20px;
+                a{color: #000}
+                &:hover{
+                    background: $mainColor;
+                    transition: all .3s;
+                    a{color: #fff}
+                }
+            }
+        }
+    }
+    .cards{
+        width: 95%;
+        margin: 0 auto;
+        // display: flex;
+        .card{
+            width: 325px;
+            height: 470px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            &__txt{
+                &__title{
+                    font-weight: bold;
+                    font-size: 36px;
+                }
+                &__subtitle{
+                    margin: 10px 0 30px;
+                }
+            }
+            &__bottom{
+                height: 40px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                &__counter{
+                    height: 40px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border: 1px solid #ccc;
+                    width: 100px;
+                    padding: 0 10px;
+                    button{
+                        background: transparent;
+                        border: none;
+                    }
+                }
+            }
+        }
+        &__top{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 50px;
+        }
+        &__bottom{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
+
+//  ================================= KATALOG END =================================
+
+//  ================================= FOOTER START =================================
+
+.footer{
+    margin-top: 100px;
+    width: 100%;
+    height: 500px;
+    padding-top: 50px;
+    background: #f5f5f5;
+
+    &>.container{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.footer__column:not(:nth-child(1)){
+    margin-top: 50px;
+}
+
+.footer__column{
+    &__title{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 20px;
+    }
+    &__item{
+        font-size: 18px;
+        line-height: 40px;
+        letter-spacing: 0.05em;
+        transition: all .3s;
+        color: #434242;
+        cursor: pointer;
+
+        &:hover{
+            color: #000;
+        }
+    }
+}
+
+.footer__column:nth-last-child(1){
+    .footer__column__item{
+        display: flex;
+        img{
+            width: 20px;
+            margin-right: 10px;
+        }
+    }
+}
+
+//  ================================= FOOTER END =================================
+
+// ================================= MAIN END =================================
+
+
+
+
